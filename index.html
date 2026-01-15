@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zombie City: Day</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="crosshair">+</div>
+    <div id="flash"></div> 
+    <div id="ui"><div id="score">Убито зомби: 0</div></div>
+
+    <div id="overlay">
+        <div id="menu">
+            <h1 style="color: #e74c3c; font-size: 48px;">ДНЕВНОЙ ГОРОД</h1>
+            <p>W,A,S,D — Ходить | SPACE — Прыжок</p>
+            <p>ЛКМ — Стрелять</p>
+            <button id="start-btn">ИГРАТЬ</button>
+        </div>
+    </div>
+
+    <audio id="snd_shot" src="https://assets.mixkit.co/active_storage/sfx/1653/1653-preview.mp3"></audio>
+    <audio id="snd_steps" src="https://www.zapsplat.com/wp-content/uploads/2015/sound-effects-one/footsteps_concrete_slow_stable.mp3" loop></audio>
+    <audio id="snd_zombie_death" src="https://assets.mixkit.co/active_storage/sfx/2205/2205-preview.mp3"></audio>
+    <audio id="snd_engine" src="https://assets.mixkit.co/active_storage/sfx/496/496-preview.mp3" loop></audio>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
